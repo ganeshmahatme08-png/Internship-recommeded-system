@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interner | Skill-Based Internship Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+   <div class="photo-background">
+        <video autoplay muted loop playsinline class="background-video">
+    <source src="background.mp4" type="video/mp4">
+</video>
+    </div>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-rocket"></i>
+            <span>Interner</span>
+        </div>
+        <nav>
+            <a href="#about-section" id="nav-discover" class="active">Discover</a>
+            <a href="#" id="nav-profile">My Profile</a>
+            <button class="login-btn">Sign In</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="discover-view">
+            <section class="hero">
+                <h1>Find Your Dream <span>Internship</span></h1>
+                <p>Search 750 internship opportunities by skills, location, and career category
+                </p>
+
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="skill-input" placeholder="e.g. Python, SQL, React, Machine Learning">
+
+                        <div class="location-select-wrapper">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <select id="location-input">
+                                <option value="">Any Location (India)</option>
+                            </select>
+                        </div>
+
+                        <div class="location-select-wrapper">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <select id="category-input">
+                                <option value="">All Categories</option>
+                            </select>
+                        </div>
+
+                        <button id="search-btn">Find Matches</button>
+                    </div>
+                    <div class="popular-skills">
+                        <span>Popular:</span>
+                        <button class="skill-tag" data-skill="React">React</button>
+                        <button class="skill-tag" data-skill="Python">Python</button>
+                        <button class="skill-tag" data-skill="Machine Learning">Machine Learning</button>
+                        <button class="skill-tag" data-skill="Node.js">Node.js</button>
+                        <button class="skill-tag" data-skill="SQL">SQL</button>
+                        <button class="skill-tag" data-skill="Java">Java</button>
+                        <button class="skill-tag" data-skill="C">C</button>
+                        <button class="skill-tag" data-skill="C++">C++</button>
+                        <button class="skill-tag" data-skill="HTML">HTML</button>
+                        <button class="skill-tag" data-skill="AWS">AWS</button>
+                        <button class="skill-tag" data-skill="Figma">Figma</button>
+                        <button class="skill-tag" data-skill="Excel">Excel</button>
+                        <button class="skill-tag" data-skill="AI">AI</button>
+                        <button class="skill-tag" data-skill="Agentic AI">Agentic AI</button>
+                        <button class="skill-tag" data-skill="Gen AI">Gen AI</button>
+                        <button class="skill-tag" data-skill="Deep Learning">Deep Learning</button>
+                        <button class="skill-tag" data-skill="CSS">CSS</button>
+                        <button class="skill-tag" data-skill="Prompt Engineering">Prompt Engineering</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section" id="about-section">
+                <div class="about-header">
+                    <h2>About <span>Interner</span></h2>
+                    <p>Welcome to Interner! Explore 750 internship opportunities across 18 career categories and 15
+                        locations. Search by skills, compare stipends and durations, and follow the application links
+                        included with each listing.</p>
+                </div>
+
+                <div class="feature-cards">
+                    <a href="matching.html" class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3>Skill-Based Matching</h3>
+                        <p>We analyze your unique skill set to provide highly relevant internship recommendations
+                            tailored just for you.</p>
+                        <span class="learn-more">Learn more &rarr;</span>
+                    </a>
+
+                    <a href="reach.html" class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                        <h3>Global & Local Reach</h3>
+                        <p>Filter internships across 14 Indian cities or choose remote opportunities from the dataset.</p>
+                        <span class="learn-more">Learn more &rarr;</span>
+                    </a>
+
+                    <a href="unified.html" class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3>Unified Search</h3>
+                        <p>Search one catalog of internship listings with matching skills, qualifications, stipends, and durations.</p>
+                        <span class="learn-more">Learn more &rarr;</span>
+                    </a>
+                </div>
+
+                <div class="about-divider"></div>
+
+                <div class="how-it-works">
+                    <div class="about-header">
+                        <h2>How Interner <span>Works</span></h2>
+                        <p>Three simple steps to land your dream role.</p>
+                    </div>
+                    <div class="steps-container">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <h3>Build Profile</h3>
+                            <p>Enter skills and choose a location or career category.</p>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <h3>Find Matches</h3>
+                            <p>Our matching tool compares your skills with the requirements in each listing.</p>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <h3>Apply Fast</h3>
+                            <p>Review the qualifications and use each listing's application link.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-divider"></div>
+
+                <div class="platforms-section">
+                    <p>Explore opportunities across these categories</p>
+                    <div class="platform-logos">
+                        <span><i class="fa-solid fa-code"></i> Software Development</span>
+                        <span><i class="fa-solid fa-chart-line"></i> Data Analytics</span>
+                        <span><i class="fa-solid fa-brain"></i> Artificial Intelligence</span>
+                        <span><i class="fa-solid fa-cloud"></i> Cloud Computing</span>
+                        <span><i class="fa-solid fa-palette"></i> Design</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="results-section" id="results-section" style="display: none;">
+                <div class="results-header">
+                    <h2 id="results-title">Recommended for you</h2>
+                    <div class="filter-sort">
+                        <select id="sort-select">
+                            <option value="match">Best Match</option>
+                            <option value="duration">Shortest Duration</option>
+                            <option value="stipend">Highest Stipend</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="loader" id="loader">
+                    <div class="spinner"></div>
+                    <p>Analyzing skills and finding matches...</p>
+                </div>
+
+                <div class="internships-grid" id="internships-grid">
+                    <!-- Internship cards will be injected here by JS -->
+                </div>
+
+                <div id="no-results" class="no-results" style="display: none;">
+                    <i class="fa-solid fa-face-frown-open"></i>
+                    <h3>No internships found for these skills</h3>
+                    <p>Try searching for different skills like 'JavaScript', 'Marketing', or 'Data Science'.</p>
+                </div>
+        </div>
+        </section>
+        </div>
+
+        <div id="profile-view" style="display: none;">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="profile-info">
+                    <h2 id="profile-name">User</h2>
+                    <p id="profile-email">you@example.com</p>
+                    <span class="status-badge"><i class="fa-solid fa-circle-check"></i> Actively Looking for
+                        Internships</span>
+                </div>
+            </div>
+
+            <div class="profile-stats-grid">
+                <div class="stat-card">
+                    <h3 id="profile-skill-count">0</h3>
+                    <p>Skills on Profile</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="profile-match-count">—</h3>
+                    <p>Matching Internships</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="profile-category-count">—</h3>
+                    <p>Matching Categories</p>
+                </div>
+            </div>
+
+            <div class="profile-details-card">
+                <div class="profile-card-heading">
+                    <div>
+                        <h3>Profile Details</h3>
+                        <p>Personal information and the skills used to find relevant internships.</p>
+                    </div>
+                    <button class="auth-btn profile-edit-btn" id="edit-profile-btn">Edit Profile</button>
+                </div>
+
+                <div class="profile-attributes-grid">
+                    <div class="profile-attribute">
+                        <span>Full Name</span>
+                        <strong id="attr-name">User</strong>
+                    </div>
+                    <div class="profile-attribute">
+                        <span>Email Address</span>
+                        <strong id="attr-email">you@example.com</strong>
+                    </div>
+                </div>
+
+                <div class="profile-skills-heading">
+                    <h4>Skills on Your Profile</h4>
+                    <span id="profile-skill-label">0 skills</span>
+                </div>
+                <div class="skills-required" id="profile-skills"></div>
+            </div>
+
+            <div class="profile-details-card profile-recommendations">
+                <h3>Internships Matching Your Skills</h3>
+                <p id="profile-match-summary">Add skills to your profile to see matching opportunities.</p>
+                <div class="profile-recommendation-list" id="profile-recommendations"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Auth Modal -->
+    <div id="signin-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button class="close-modal" id="close-signin">&times;</button>
+            <div class="modal-header">
+                <h2 id="auth-title">Welcome Back</h2>
+                <p id="auth-subtitle">Sign in to unlock personalized internship recommendations.</p>
+            </div>
+
+            <!-- Sign In Form -->
+            <form id="signin-form">
+                <div class="form-group">
+                    <label for="signin-email">Email Address *</label>
+                    <input type="email" id="signin-email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="signin-password">Password *</label>
+                    <input type="password" id="signin-password" placeholder="••••••••" required>
+                    <div style="text-align: right; margin-top: 5px;">
+                        <a href="#" id="show-forgot-password" style="font-size: 0.85rem; color: #3b82f6; text-decoration: none;">Forgot Password?</a>
+                    </div>
+                </div>
+                <button type="submit" class="auth-btn">Sign In</button>
+                <p class="auth-switch">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+            </form>
+
+            <!-- Sign Up Form (Hidden by default) -->
+            <form id="signup-form" style="display: none;">
+                <div class="name-row">
+                    <div class="form-group half-width">
+                        <label for="signup-fname">First Name *</label>
+                        <input type="text" id="signup-fname" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="signup-lname">Last Name *</label>
+                        <input type="text" id="signup-lname" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email Address *</label>
+                    <input type="email" id="signup-email" placeholder="abc@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password *</label>
+                    <input type="password" id="signup-password" placeholder="••••••••" required minlength="8">
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm">Confirm Password *</label>
+                    <input type="password" id="signup-confirm" placeholder="••••••••" required minlength="8">
+                </div>
+                <p id="password-error"
+                    style="color: #ef4444; font-size: 0.85rem; margin-top: -10px; margin-bottom: 15px; display: none;">
+                    Passwords do not match.</p>
+
+                <button type="submit" class="auth-btn">Create Account</button>
+                <p class="auth-switch">Already have an account? <a href="#" id="show-signin">Sign in</a></p>
+            </form>
+
+            <!-- Forgot Password Form -->
+            <form id="forgot-password-form" style="display: none;">
+                <div class="form-group">
+                    <label for="forgot-email">Email Address *</label>
+                    <input type="email" id="forgot-email" placeholder="you@example.com" required>
+                </div>
+                <button type="submit" class="auth-btn">Send OTP</button>
+                <p class="auth-switch">Remember your password? <a href="#" id="show-signin-from-forgot">Sign in</a></p>
+            </form>
+
+            <!-- OTP Verification Form -->
+            <form id="otp-verification-form" style="display: none;">
+                <div class="form-group">
+                    <label for="otp-input">Enter 6-digit OTP *</label>
+                    <input type="text" id="otp-input" placeholder="123456" required pattern="\d{6}" maxlength="6">
+                </div>
+                <button type="submit" class="auth-btn">Verify OTP</button>
+                <p class="auth-switch"><a href="#" id="back-to-previous">Go Back</a></p>
+            </form>
+
+            <!-- Reset Password Form -->
+            <form id="reset-password-form" style="display: none;">
+                <div class="form-group">
+                    <label for="reset-password-input">New Password *</label>
+                    <input type="password" id="reset-password-input" placeholder="••••••••" required minlength="8">
+                </div>
+                <div class="form-group">
+                    <label for="reset-confirm">Confirm Password *</label>
+                    <input type="password" id="reset-confirm" placeholder="••••••••" required minlength="8">
+                </div>
+                <p id="reset-password-error"
+                    style="color: #ef4444; font-size: 0.85rem; margin-top: -10px; margin-bottom: 15px; display: none;">
+                    Passwords do not match.</p>
+                <button type="submit" class="auth-btn">Reset Password</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Edit Profile Modal -->
+    <div id="edit-profile-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button class="close-modal" id="close-edit-profile">&times;</button>
+            <div class="modal-header">
+                <h2>Edit Profile</h2>
+                <p>Update your personal information and skills.</p>
+            </div>
+
+            <form id="edit-profile-form">
+                <div class="form-group">
+                    <label for="edit-name">Full Name *</label>
+                    <input type="text" id="edit-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-email">Email Address *</label>
+                    <input type="email" id="edit-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-skills">Skills (comma separated)</label>
+                    <input type="text" id="edit-skills" placeholder="e.g. React, Python, UI/UX">
+                </div>
+                <button type="submit" class="auth-btn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Interner. Elevating careers globally.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
